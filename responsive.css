@@ -81,6 +81,11 @@
 		margin: 15px 0;
 	}
 
+	.hero-area::after,
+	.footer-area:after {
+		display: none;
+	}
+
 }
 
 
