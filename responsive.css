@@ -66,7 +66,7 @@
 	}
 
 	.database-area::after {
-		height: 40px;
+		height: 35px;
 	}
 
 	.single-database-title p.price {
@@ -84,6 +84,31 @@
 	.hero-area::after,
 	.footer-area:after {
 		display: none;
+	}
+
+	.single-database-title {
+		float: none;
+		width: auto;
+	}
+
+	.single-database-title::after {
+		display: none;
+	}
+
+	.owl-nav div {
+		left: 0;
+	}
+
+	.owl-nav div.owl-next {
+		right: 0;
+	}
+
+	.sticky-text a {
+		right: 60px;
+	}
+
+	body {
+		overflow-x: hidden !important;
 	}
 
 }
