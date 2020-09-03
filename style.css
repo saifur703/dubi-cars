@@ -1,0 +1,872 @@
+/*=================================
+Author: Md Saifur Rahman
+Updated: 03 September, 2020
+Notes: Hand Coded for Fiverr.com
+===================================*/
+
+/*------Start Base CSS------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #283949;
+  overflow-x: hidden;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 0 solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.fix:before,
+.fix:after {
+  content: '';
+  display: table;
+}
+
+.fix:after {
+  clear: both;
+}
+
+/*------End Base CSS------*/
+
+/* Header CSS Start */
+.logo a {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #283949;
+  font-weight: 700;
+  display: block;
+}
+
+.logo span {
+  color: #F14B6A;
+  display: block;
+  padding-top: 5px;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-menu li a {
+  display: block;
+  margin: 0 15px;
+  padding: 15px 0;
+  color: #283949;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+}
+
+.main-menu li a:hover {
+  color: #F14B6A;
+  border-color: #F14B6A;
+}
+
+.header-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-right li {
+  display: inline-block;
+}
+
+.header-right li a {
+  padding: 10px;
+  padding-left: 0;
+  color: #283949;
+  display: block;
+}
+
+.header-right li a:hover {
+  color: #F14B6A;
+}
+
+.header-right a.boxed-btn {
+  background: #F14B6A;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header-right a.boxed-btn:hover {
+  background: linear-gradient(to right, #f14b6a, #834158);
+  color: #fff;
+}
+
+.header-area {
+  padding: 10px 0 0;
+  background: #fff;
+}
+
+/* Header CSS End */
+
+
+/* Drop Down CSS Start */
+
+.main-menu .dropdown {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 700px;
+  background: #283949;
+  color: #fff;
+  z-index: 99;
+  padding: 30px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main-menu .dropdown li {
+  display: block;
+}
+
+.main-menu .dropdown li a {
+  color: #fff;
+  padding: 5px 12px;
+  border: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.main-menu .dropdown h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.main-menu .dropdown li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.main-menu li:hover .dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Drop Down CSS End */
+
+/* Hero Area CSS Start */
+.hero-area {
+  background: linear-gradient(to bottom, #e5e5e5 0%, #ffffff 100%);
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-area::after {
+  position: absolute;
+  content: "";
+  top: 100px;
+  right: -110px;
+  width: 376px;
+  height: 347px;
+  background: url("assets/img/smile-symbol.svg") no-repeat scroll 0 0 / cover;
+  z-index: -1;
+}
+
+.hero-top-text h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #283949;
+  margin-bottom: 5px;
+}
+
+.hero-top-text {
+  color: #283949;
+  font-size: 20px;
+}
+
+.hero-top-text ul {
+  padding: 0;
+  list-style: none;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.color--pink {
+  color: #F14B6A;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.hero-top-text li {
+  display: block;
+}
+
+.hero-top-text li a {
+  display: block;
+  color: #283949;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.hero-bottom-text .boxed-btn {
+  background: #283949;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.hero-bottom-text {
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.hero-bottom-text .border-bottom-btn {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 400;
+  color: #283949;
+  display: block;
+  padding: 10px 20px;
+}
+
+.nav.nav-tabs {
+  background: #283949;
+  color: #fff;
+  width: 50%;
+  border: 2px solid #283949;
+  border-radius: 34px 34px 0 0;
+  padding: 5px 0 0;
+  border-bottom: 0;
+  margin-bottom: -2px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background: #fff;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  color: #283949;
+}
+
+.nav-tabs .nav-link {
+  font-size: 20px;
+  padding: 20px 50px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-tabs .nav-link span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  background: #F14B6A;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.tab-content {
+  border: 2px solid #283949;
+  padding: 30px 20px 30px 36px;
+  border-radius: 0 36px 36px 36px;
+  background-color: #fff;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-tabs .nav-link.active:hover {
+  color: #283949;
+}
+
+.hero-search-box {
+  margin: 35px 0 15px;
+}
+
+.hero-search-box {
+  margin: 35px 0 15px;
+}
+
+div#sell {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+div#sell .color--pink {
+  font-weight: 700;
+}
+
+div#sell a.sell-my-car {
+  background: linear-gradient(to right, #f14b6a, #834158);
+  color: #fff;
+  display: inline-block;
+  padding: 10px 50px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+div#sell p a {
+  color: #283949;
+  text-decoration: underline;
+}
+
+div#sell a.sell-my-car:hover {
+  background: linear-gradient(to left, #f14b6a, #834158);
+}
+
+div#sell .product__info--trial {
+  text-align: center;
+  padding: 12px 0;
+  line-height: 1.6em;
+  font-size: 14px;
+}
+
+div#sell .product__info--trial a {
+  text-decoration: underline;
+  color: #283949;
+}
+
+#export-brief h2 {
+  color: #283949;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#export-brief {
+  color: #283949;
+  margin-bottom: 30px;
+}
+
+#export-brief a {
+  text-decoration: underline;
+  color: #283949;
+}
+
+.single-export-item label {
+  font-size: 13px;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.single-export-item select {
+  color: #939CA4;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #939CA4;
+  display: block;
+  width: 100%;
+}
+
+.radio--holder {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.radio--holder label {
+  display: inline;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+
+.single-export-item a.boxed-btn {
+  background: linear-gradient(to right, #f14b6a, #834158);
+  display: block;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.single-export-item a.boxed-btn:hover {
+  background: linear-gradient(to left, #f14b6a, #834158);
+}
+
+.single-export-item a {
+  color: #283949;
+  text-decoration: underline;
+  padding: 15px 30px;
+  display: block;
+}
+
+.buy-tab-pane .nav.nav-tabs {
+  background: #E5E5E5;
+  border: none;
+  padding: 0;
+  border-radius: 40px;
+}
+
+.buy-tab-pane .tab-content {
+  border: none;
+}
+
+.buy-tab-pane .nav-link,
+.buy-tab-pane .nav-link:hover {
+  color: #283949;
+}
+
+.buy-tab-pane .nav-link.active {
+  border: 2px solid #283949;
+  border-radius: 40px;
+}
+
+.buy-tab-pane .nav-item {
+  width: 50%;
+}
+
+/* Hero Area CSS End */
+
+/* Database Area CSS Start */
+.database-area {
+  background: #283949;
+  padding: 50px 0;
+  padding-bottom: 100px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.database-area::before {
+  position: absolute;
+  content: "";
+  left: -110px;
+  width: 376px;
+  height: 347px;
+  background: url("assets/img/smile-symbol.svg") no-repeat scroll 0 0 / cover;
+  transform: rotate(-90deg);
+  bottom: 100px;
+  z-index: -1;
+}
+
+.database-area::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: url("assets/img/clouds.svg") no-repeat scroll top center / cover;
+  z-index: -1;
+}
+
+.single-database-title {
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.single-database-title p.price {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.single-database-title::after {
+  position: absolute;
+  content: "";
+  right: 30px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #455361;
+}
+
+.single-database-title:last-child::after {
+  display: none;
+}
+
+.single-database-item {
+  float: left;
+  width: 33.334%;
+  text-align: center;
+  border-bottom: 1px solid #455361;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+}
+
+.single-database-item::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 80%;
+  background: #455361;
+}
+
+.single-database-item:nth-child(3)::after,
+.single-database-item:nth-child(6)::after,
+.single-database-item:last-child::after {
+  display: none;
+}
+
+.single-database-item p.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f14b6a;
+}
+
+/* Database Area CSS End */
+
+/* Blog CSS Start */
+.blog-area {
+  padding: 50px 0;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  color: #283949;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.blog-image img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.blog-image {
+  margin-bottom: 10px;
+}
+
+.blog-meta {
+  font-size: 11px;
+  color: #ababab;
+  text-align: right;
+}
+
+.single-blog h2 {
+  color: #f14b6a;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.blog-meta p {
+  margin-bottom: 0;
+}
+
+.single-blog a {
+  color: #283949;
+  text-decoration: underline;
+}
+
+.single-blog {
+  margin: 15px 0;
+}
+
+/* Blog CSS End */
+
+
+/* Testimonial Area CSS Start */
+.testimonial-area {
+  padding: 50px 0;
+}
+
+/* Testimonial Area CSS End */
+
+
+/* Owl Controls */
+.single-testimonial img {
+  width: 150px !important;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.single-testimonial {
+  text-align: center;
+}
+
+.owl-nav div {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 50px;
+}
+
+.owl-nav div.owl-next {
+  left: auto;
+  right: -30px;
+}
+
+.owl-controls i.fa {
+  color: #283949;
+}
+
+.owl-dots div {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  display: inline-block;
+  border-radius: 50%;
+  opacity: .5;
+  margin: 0 5px;
+}
+
+.owl-dots {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+}
+
+.owl-dots div.active {
+  opacity: 1;
+}
+
+/* Owl Controls */
+
+/* Popular Links CSS Start */
+.popular-links-area {
+  padding: 50px 0;
+}
+
+.single-popular-link h4 {
+  color: #283949;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.single-popular-link ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.single-popular-link li {
+  display: block;
+}
+
+.single-popular-link li a {
+  display: block;
+  color: #283949;
+  text-decoration: underline;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* Popular Links CSS End */
+
+/* Footer CSS Start */
+.footer-area {
+  background: #283949;
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-area:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: -110px;
+  width: 376px;
+  height: 347px;
+  background: url("assets/img/smile-symbol.svg") no-repeat scroll 0 0 / cover;
+  z-index: -1;
+}
+
+.footer-area,
+.footer-area a {
+  color: #fff;
+}
+
+.single-footer-item {
+  line-height: 1.6;
+}
+
+.single-footer-item ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.single-footer-item li {
+  display: block;
+}
+
+.single-footer-item li a {
+  display: block;
+  text-decoration: underline;
+  padding: 5px 0;
+}
+
+.footer-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social li {
+  display: inline-block;
+}
+
+.footer-social li a {
+  display: block;
+  background: #fff;
+  color: #f14b6a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.footer-social {
+  margin-top: 15px;
+}
+
+.single-footer-item img {
+  width: 150px;
+}
+
+.sticky-text a {
+  background: #F14B6A;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+}
+
+/* Footer CSS End */
+
+/* Slick Nav Start */
+.slicknav_menu {
+  display: none;
+  background-color: #283949;
+}
+
+.slicknav_nav a:hover {
+  background: #fff;
+  color: #283949;
+}
+
+.slicknav_menu h4 {
+  font-size: 14px;
+}
+
+.slicknav_menu .dropdown {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slicknav_menu li:hover .dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Slick Nav End */
